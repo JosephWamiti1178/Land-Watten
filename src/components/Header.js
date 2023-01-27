@@ -1,5 +1,5 @@
 import { Switch, Route } from "react-router-dom";
-import React, { useState } from "react";
+//import React, { useState } from "react";
 import NavBar from "./Navbar";
 import About from './About'
 import Property from './Property'
@@ -7,11 +7,12 @@ import Home from './Home'
 
 
 function Header(){
-    const [page, setPage] = useState("/")
+    //const [page, setPage] = useState("/")
+    // onChangePage={setPage}
 
     return(
         <div>
-        <NavBar onChangePage={setPage} />
+        <NavBar />
         <Switch>
             <Route path="/about">
                 <About />
