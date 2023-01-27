@@ -19,10 +19,9 @@ function NavBar({ onChangePage }) {
     <div className="container-fluid">
       <nav className="navigation">
         <a href="/" className="brand-name">
-        MacroSoft
+          WattenDevelopers
           </a>
       <button className="hamburger" onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
-        {/* icon from heroicons.com */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -51,16 +50,16 @@ function NavBar({ onChangePage }) {
               About</NavLink>
           </li>
           <li>
-            <NavLink style={{color:"black"}}  to="/property">Property</NavLink>
+            <NavLink style={{color:"black", display: "block",}}  to="/property">Property</NavLink>
           </li>
           <li>
-            <NavLink style={{color:"black"}}  to="/blog">Blogs</NavLink>
+            <NavLink style={{color:"black", display: "block"}}  to="/blog">Blogs</NavLink>
           </li>
           <li>
-            <NavLink style={{color:"black"}}  to="/testimonial">Testimonials</NavLink>
+            <NavLink style={{color:"black", display: "block"}}  to="/testimonial">Testimonials</NavLink>
           </li>
           <li>
-            <NavLink  style={{color:"black"}}  to="/contact">Contact</NavLink>
+            <NavLink  style={{color:"black", display: "block"}}  to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>
