@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 const ContactForm = () => {
-  const [formStatus, setFormStatus] = React.useState('Send')
+  const [formStatus, setFormStatus] = useState('Send')
+
   const onSubmit = (e) => {
     e.preventDefault()
     setFormStatus('Submitting...')
@@ -13,8 +14,12 @@ const ContactForm = () => {
     console.log(conFom)
   }
   return (
-    <div className="container mt-5">
-      <h2 className="mb-3">React Contact Form Component Example</h2>
+    <div className="container  contact">
+      <div className='contact-image'>
+        <img src='./public/title.jpeg' alt=''/>
+      </div>
+      <div>
+      <h2 className="mb-3">Quick Enquiry</h2>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
           <label className="form-label" htmlFor="name">
@@ -38,6 +43,8 @@ const ContactForm = () => {
           {formStatus}
         </button>
       </form>
+      
+      </div>
     </div>
   )
 }
