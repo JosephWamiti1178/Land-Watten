@@ -13,12 +13,12 @@ function Property(){
       }, []);
     return(
         <section>
-            {setLands.map((land, id)=>{
+            {lands.map((land, id)=>{
                 return(
                     <div>
                         <div className="card" key={land.id}>
                             <div className="image">
-                                <img src={land.image} />
+                                <img src={land.image} alt="" />
                             </div>
                            <div>
                             <h4>{land.price}</h4>
