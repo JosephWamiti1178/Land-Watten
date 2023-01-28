@@ -14,11 +14,12 @@ const ContactForm = () => {
     console.log(conFom)
   }
   return (
+    <section>
     <div className="container  contact">
       <div className='contact-image'>
-        <img src='./public/title.jpeg' alt=''/>
+      <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/zXLt7JQr/title.jpg' border='0' alt='title'/></a>
       </div>
-      <div>
+      <div className='form '>
       <h2 className="mb-3">Quick Enquiry</h2>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
@@ -46,6 +47,7 @@ const ContactForm = () => {
       
       </div>
     </div>
+    </section>
   )
 }
 export default ContactForm
