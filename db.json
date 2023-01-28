@@ -1,0 +1,89 @@
+{
+    "lands":[
+        {
+            "id": 1,
+            "name": "Graceland",
+            "image":"https://i.postimg.cc/VkgX3M3C/gracepic1.jpg",
+            "size": "50X100",
+            "price": "KSH.500,000"
+        },
+        {
+            "id": 2,
+            "name": "Marura Block 3 Phase-1",
+            "image":"https://i.postimg.cc/66n1pmcf/marura.jpg",
+            "size": "50X100",
+            "price":"KSH.400,000"
+        },
+        {
+            "id": 3,
+            "name": "Marura Block 3 Phase-4",
+            "image":"https://i.postimg.cc/KYn7Jwmm/Whats-App-Image-2023-01-04-at-02-05-38.jpg",
+            "size": "50X100",
+            "price":"KSH.400,000"
+        },
+        {
+            "id": 4,
+            "name": "Marura Block 3 Phase-2",
+            "image":"https://i.postimg.cc/rFNKZTrn/number.jpg",
+            "size": "50X100",
+            "price":"KSH.400,000"
+        },
+        {
+            "id": 5,
+            "name": "Githima Block 6 Airstrip",
+            "image":"https://i.postimg.cc/rFNKZTrn/number.jpg",
+            "size": "50X100",
+            "price": "SH.1,700000"
+        },
+        {
+            "id": 6,
+            "name": "Nawiri Green Gardens",
+            "image":"https://i.postimg.cc/rFNKZTrn/number.jpg",
+            "size": "50X100",
+            "price": "KSH.600,000"
+        },
+        {
+            "id": 7,
+            "name": "Ridgeways Matanya",
+            "image":"https://i.postimg.cc/DfgSBFsC/Whats-App-Image-2023-01-06-at-04-36-06.jpg",
+            "size": "50X100",
+            "price":"KSH.250,000"
+        },
+        {
+            "id": 8,
+            "name": "Marura Block 3 Phase-3",
+            "image":"https://i.postimg.cc/DfgSBFsC/Whats-App-Image-2023-01-06-at-04-36-06.jpg",
+            "size": "50X100",
+            "price":"KSH.400,000"
+        },
+        {
+            "id": 9,
+            "name": "Mawingu Greens",
+            "image":"https://i.postimg.cc/DfgSBFsC/Whats-App-Image-2023-01-06-at-04-36-06.jpg",
+            "size": "50X100",
+            "price":"KSH.250,000"
+        },
+        {
+            "id": 10,
+            "name": "Tigithi Matanya block 3",
+            "image":"https://i.postimg.cc/DfgSBFsC/Whats-App-Image-2023-01-06-at-04-36-06.jpg",
+            "size": "50X100",
+            "price":"SH.300,000"
+        },
+        {
+            "id": 11,
+            "name": "Sunrise Garden",
+            "image":"https://i.postimg.cc/zvGsFnZF/sunrise.jpg",
+            "size": "50X100",
+            "price": "SH.33,000000"
+        },
+        {
+            "id": 12,
+            "name": "Marura Block 3 phase-5",
+            "image":"https://i.postimg.cc/DfgSBFsC/Whats-App-Image-2023-01-06-at-04-36-06.jpg",
+            "size": "50X100",
+            "price": "SH.550,000"
+        }
+    ]
+
+}
