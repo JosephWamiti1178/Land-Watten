@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import ImageSlider from './components/Hero';
 import About from './components/About';
 import Property from './components/Property';
-//import Footer from './components/Footer'
+import Footer from './components/Footer'
 //import Card from './components/Card'
 import  ContactForm from './components/Contact';
 //import Testimonial from './components/Testimonial';
@@ -22,7 +22,7 @@ function App() {
     <ContactForm />
     {/* <Card /> */}
     {/* <Testimonial/> */}
-    {/* <Footer /> */}
+    <Footer />
     </BrowserRouter>
     
   );

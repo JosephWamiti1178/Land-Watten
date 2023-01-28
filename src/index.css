@@ -259,10 +259,19 @@ button{
   background: var(--charcoal-light);
   color: rgb(233, 207, 207);
 }
+.contact-container{
+  padding: 3rem;
+  margin-top: .1rem;
+}
 
 .contact{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+}
+.form{
+  /* right: 0; */
+  width: 50%;
 }
 
 @media screen and (min-width: 768px) {

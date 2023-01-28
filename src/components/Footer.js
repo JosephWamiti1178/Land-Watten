@@ -1,74 +1,83 @@
-import React from 'react';
-import { CDBFooter, CDBFooterLink, CDBBtn, CDBIcon, CDBContainer,CDBBox } from 'cdbreact';
-
-export const Footer = () => {
+import React from "react";
+import {
+  Box,
+  Container,
+  Row,
+  Column,
+  FooterLink,
+  Heading,
+} from "./FooterStyles";
+  
+const Footer = () => {
   return (
-    <CDBFooter className="shadow">
-      <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
-        <CDBBox display="flex" justifyContent="between" className="flex-wrap">
-          <CDBBox>
-            <a href="/" className="d-flex align-items-center p-0 text-dark">
-              <img alt="logo" src="logo" width="30px" />
-              <span className="ml-3 h5 font-weight-bold">Devwares</span>
-            </a>
-            <p className="my-3" style={{ width: '250px' }}>
-              We are creating High Quality Resources and tools to Aid developers during the
-              developement of their projects
-            </p>
-          </CDBBox>
-          <CDBBox>
-            <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-              Devwares
-            </p>
-            <CDBBox flex="column" display="flex" style={{ cursor: 'pointer', padding: '0' }}>
-              <CDBFooterLink href="/">Resources</CDBFooterLink>
-              <CDBFooterLink href="/">About Us</CDBFooterLink>
-              <CDBFooterLink href="/">Contact</CDBFooterLink>
-              <CDBFooterLink href="/">Blog</CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-          <CDBBox>
-            <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-              Help
-            </p>
-            <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-              <CDBFooterLink href="/">Support</CDBFooterLink>
-              <CDBFooterLink href="/">Sign Up</CDBFooterLink>
-              <CDBFooterLink href="/">Sign In</CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-          <CDBBox>
-            <p className="h5 mb-4" style={{ fontWeight: '600' }}>
-              Products
-            </p>
-            <CDBBox display="flex" flex="column" style={{ cursor: 'pointer', padding: '0' }}>
-              <CDBFooterLink href="/">Windframe</CDBFooterLink>
-              <CDBFooterLink href="/">Loop</CDBFooterLink>
-              <CDBFooterLink href="/">Contrast</CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-        </CDBBox>
-        <CDBBox
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          style={{ width: '100%' }}
-          className="mx-auto mt-4"
-        >
-          <small className="text-center" style={{ width: '50%' }}>
-            &copy; Devwares, 2023. All rights reserved.
-          </small>
-          <CDBBtn flat color="dark" className="p-2">
-            <CDBIcon fab icon="facebook-f" />
-          </CDBBtn>
-          <CDBBtn flat color="dark" className="mx-3 p-2">
-            <CDBIcon fab icon="twitter" />
-          </CDBBtn>
-          <CDBBtn flat color="dark" className="p-2">
-            <CDBIcon fab icon="instagram" />
-          </CDBBtn>
-        </CDBBox>
-      </CDBBox>
-    </CDBFooter>
+    <footer>
+     <div className="container">
+      <Box>
+    
+      <h1 style={{ color: "green", 
+                   textAlign: "center", 
+                   marginTop: "-50px" }}>
+        GeeksforGeeks: A Computer Science Portal for Geeks
+      </h1>
+      <Container>
+        <Row>
+          <Column>
+            <Heading>About Us</Heading>
+            <FooterLink href="#">Management</FooterLink>
+            <FooterLink href="#">Why us</FooterLink>
+            <FooterLink href="#">Testimonials</FooterLink>
+          </Column>
+          <Column>
+            <Heading>Selling Lands</Heading>
+            <FooterLink href="#"></FooterLink>
+            <FooterLink href="#">Internships</FooterLink>
+            <FooterLink href="#">Coding</FooterLink>
+            <FooterLink href="#">Teaching</FooterLink>
+          </Column>
+          <Column>
+            <Heading>Contact Us</Heading>
+            <FooterLink href="#">Uttar Pradesh</FooterLink>
+            <FooterLink href="#">Ahemdabad</FooterLink>
+            <FooterLink href="#">Indore</FooterLink>
+            <FooterLink href="#">Mumbai</FooterLink>
+          </Column>
+          <Column>
+            <Heading>Social Media</Heading>
+            <FooterLink href="#">
+              <i className="fab fa-facebook-f">
+                <span style={{ marginLeft: "10px" }}>
+                  Facebook
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="fab fa-instagram">
+                <span style={{ marginLeft: "10px" }}>
+                  Instagram
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="fab fa-twitter">
+                <span style={{ marginLeft: "10px" }}>
+                  Twitter
+                </span>
+              </i>
+            </FooterLink>
+            <FooterLink href="#">
+              <i className="fab fa-youtube">
+                <span style={{ marginLeft: "10px" }}>
+                  Youtube
+                </span>
+              </i>
+            </FooterLink>
+          </Column>
+        </Row>
+      </Container>
+    </Box>
+    </div>
+     </footer>
   );
 };
+export default Footer;
+

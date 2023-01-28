@@ -15,11 +15,12 @@ const ContactForm = () => {
   }
   return (
     <section>
-    <div className="container  contact">
+    <div className="container contact-container">
+      <div className='contact'>
       <div className='contact-image'>
-      <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/zXLt7JQr/title.jpg' border='0' alt='title'/></a>
+      <a href='https://postimages.org/' target=''><img src='https://i.postimg.cc/0y4JfshL/title.jpg' border='0' width="400" height="400" alt='title'/></a>
       </div>
-      <div className='form '>
+      <div className='form'>
       <h2 className="mb-3">Quick Enquiry</h2>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
@@ -44,7 +45,7 @@ const ContactForm = () => {
           {formStatus}
         </button>
       </form>
-      
+      </div>
       </div>
     </div>
     </section>
