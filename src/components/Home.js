@@ -1,29 +1,30 @@
-import React, { useState } from "react";
-import { Button, Form, Input } from "reactstrap";
+// import React, { useState } from "react";
 
-export default function FormComponent() {
-    const [reviews, setReviews] = useState("");
-    const onChange = (e: any) => {
-      setReviews(e.target.valuTe);
-    };
-    const onSubmit = (e: any) => {
-      console.log("Form Submitted");
-    };
+// import { Button, Form, Input } from "reactstrap";
+
+// export default function FormComponent() {
+//     const [reviews, setReviews] = useState("");
+//     const onChange = (e: any) => {
+//       setReviews(e.target.valuTe);
+//     };
+//     const onSubmit = (e: any) => {
+//       console.log("Form Submitted");
+//     };
   
-    return (
-      <div className="form-container">
-        <Form onSubmit={onSubmit}>
-          <Input
-            className="reviews-form"
-            type="text"
-            placeholder="enter you reviews"
-            value={reviews}
-            onChange={onChange}
-          />
-          <Button type="submit" style={{ background: "Green" }}>
-            Submit
-          </Button>
-        </Form>
-      </div>
-    );
-  }
+//     return (
+//       <div className="form-container">
+//         <Form onSubmit={onSubmit}>
+//           <Input
+//             className="reviews-form"
+//             type="text"
+//             placeholder="enter you reviews"
+//             value={reviews}
+//             onChange={onChange}
+//           />
+//           <Button type="submit" style={{ background: "Green" }}>
+//             Submit
+//           </Button>
+//         </Form>
+//       </div>
+//     );
+//   }

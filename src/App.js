@@ -5,6 +5,7 @@ import ImageSlider from './components/Hero';
 import About from './components/About';
 import Property from './components/Property';
 import  ContactForm from './components/Contact';
+//import Testimonial from './components/Testimonial';
 import { SliderData } from './components/SliderData';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
     <About/>
     <Property />
     <ContactForm />
+    {/* <Testimonial/> */}
     </BrowserRouter>
     
   );
