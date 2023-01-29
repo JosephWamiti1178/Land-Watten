@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from 'react';
-//import { SliderData } from './SliderData';
+import React, { useState } from 'react';
+import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
-const ImageSlider = () => {
-  const [lands, setLands] = useState([])
-  const [current, setCurrent] = useState(0);
-  const length = lands.length;
 
-  useEffect(()=>{
-    fetch(`http://localhost:8000/lands/${id}`)
-     .then(res => res.json())
-     .then(data => setLands(data))
-  }, [id])
+const ImageSlider = ({slides}) => {
+  //const [lands, setLands] = useState([])
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  // useEffect(()=>{
+  //   fetch(`http://localhost:8000/lands`)
+  //    .then(res => res.json())
+  //    .then(data => setLands(data))
+  // }, [])
 
 
   const nextSlide = () => {
@@ -22,21 +23,21 @@ const ImageSlider = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (!Array.isArray(lands) || lands.length <= 0) {
+  if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
 
   return (
-    <section className='slider'>
+    <section className='slider container-fluid'>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
       <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
-      {setLands.map((land, index) => {
+      {SliderData.map((slide, index) => {
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}  
             key={index} >
             {index === current && (
-              <img src={.image} alt='' className='image' />
+              <img src={slide.image} alt='' className='image' />
             )}
           </div>
         );
