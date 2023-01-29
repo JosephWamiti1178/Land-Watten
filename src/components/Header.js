@@ -11,7 +11,7 @@ function Header(){
     // onChangePage={setPage}
 
     return(
-        <div>
+        <header>
         <NavBar />
         <Switch>
             <Route path="/about">
@@ -24,7 +24,7 @@ function Header(){
                 <Home />
             </Route>
         </Switch>
-        </div>
+        </header>
     )
 }
 
