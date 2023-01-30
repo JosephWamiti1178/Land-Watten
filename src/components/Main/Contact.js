@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-const ContactForm = () => {
+function ContactForm() {
   const [formStatus, setFormStatus] = useState('Send')
 
   const onSubmit = (e) => {
@@ -15,7 +15,7 @@ const ContactForm = () => {
   }
   return (
     <section>
-    <div className="container contact-container">
+    <div className="container-fluid contact-container">
       <div className='contact'>
       <div className='contact-image'>
       <a href='https://postimages.org/' target=''><img src='https://i.postimg.cc/0y4JfshL/title.jpg' border='0' width="400" height="400" alt='title'/></a>

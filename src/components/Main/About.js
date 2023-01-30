@@ -2,7 +2,6 @@ import React from "react";
 
 function About() {
     return (
-       <section>
         <div className="container-fluid fluid">
             <div className="container" id="about-container">
                 <div className="about">
@@ -51,7 +50,7 @@ function About() {
 
         </div>
 
-       </section>
+    
     );
 }
 

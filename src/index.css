@@ -56,6 +56,9 @@ p {
   font-size: 1.3rem;
   margin-left: 1rem;
 }
+.navigation{
+  padding: 3rem;
+}
 .navigation-menu {
   margin-left: auto;
 }
@@ -198,11 +201,11 @@ p {
 } */
 
 .property-wrapper{
-  max-width: 1280px;
+  width: 100%;
+  max-width: 1280px; 
   margin: 0 auto;
   padding: 2rem;
   background-color:#184d31;
-  /* background-image: url("/png/black-grunge-bac"); */
   text-align: center;
 }
 .property-wrapper .heading{

@@ -4,7 +4,7 @@ function Property(){
     const [lands, setLands] = useState([])
 
     useEffect(()=> {
-        fetch("http://localhost:8000/lands")
+        fetch("http://localhost:3000/lands")
         .then((response)=> response.json())
         .then((land) => setLands(land))
         .catch((error) => {
@@ -12,8 +12,8 @@ function Property(){
         });
       }, []);
     return(
-        <section>
-            <div className="container">
+        
+            <div className="container-fluid">
             <div className="property-wrapper">
                 <div className="heading">
                 <h2 className="title">Selling Lands</h2>
@@ -53,7 +53,6 @@ function Property(){
              </div>
             </div>
            </div>
-        </section>
        
     )
 }

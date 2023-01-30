@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import About from './About'
+import Property from './Property';
+import ContactForm from './Contact';
 
 
 const ImageSlider = ({slides}) => {
@@ -28,7 +31,8 @@ const ImageSlider = ({slides}) => {
   }
 
   return (
-    <section className='slider container-fluid'>
+    <>
+    <div className='slider container-fluid'>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
       <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
       {SliderData.map((slide, index) => {
@@ -42,7 +46,11 @@ const ImageSlider = ({slides}) => {
           </div>
         );
       })}
-    </section>
+    </div>
+    <About />
+    <Property />
+    <ContactForm />
+    </>
   );
 };
 
