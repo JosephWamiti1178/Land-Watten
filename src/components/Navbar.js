@@ -1,12 +1,12 @@
-//import { Link } from "react-router-dom"
+//import { NavLink } from "react-router-dom"
 import React, {useState} from "react"
-import { Link} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 // import {Navbar, Nav} from 'react-bootstrap'
 // import {LinkContainer} from 'react-router-bootstrap'
 
 
-
-function NavBar({ onChangePage, handleSearch}) {
+//{ onChangePage, handleSearch}
+function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
     
@@ -34,56 +34,56 @@ function NavBar({ onChangePage, handleSearch}) {
             clipRule="evenodd"
           />
         </svg>
-      </button>
+      </button> 
       <div className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }>
         <ul>
-          <li className="nav-item">
-            <Link className="nav-link" to="/">
+          <li>
+            <NavLink className="nav-link" exact to="/">
               
                     Home
                   
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link"  to="about">
-                    About
-                  </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="property">
-                    Property
-                  </Link>
-          </li>
-          {/* <li>
-            <Link style={{color:"black", display: "block"}}  to="/blog">Blogs</Link>
+            </NavLink>
           </li>
           <li>
-            <Link style={{color:"black", display: "block"}}  to="/testimonial">Testimonials</Link>
+            <NavLink className="nav-link"  to="/about">
+                    About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink className="nav-link" to="/property">
+                    Property
+            </NavLink>
+          </li>
+           {/* <li>
+            <NavLink style={{color:"black", display: "block"}}  to="/blog">Blogs</NavLink>
+          </li>
+          <li>
+            <NavLink style={{color:"black", display: "block"}}  to="/testimonial">Testimonials</NavLink>
           </li> */}
-          <li className="nav-item">
-            <Link className="nav-link"  to="contact">
+          <li>
+            <NavLink className="nav-link"  to="/contact">
                     Contact
-                  </Link>
+                  </NavLink>
           </li>
         </ul>
         
       </div>
       <form className="d-flex search" role="search">
               <input
-                onChange={handleSearch}
+                // onChange={handleSearch}
                 class="form-control me-1"
                 type="text"
                 name="price"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <Link className="nav-link" to="add">
+              <NavLink className="nav-link" to="add">
                 {" "}
                 <button class="btn btn-outline-success" type="submit">
                   Add
                 </button>
-              </Link>
+              </NavLink>
             </form>
     </nav>
     </div>

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, {useState}from "react";
+//import { Link } from "react-router-dom";
 
-function AddLand({ lands, setLands }) {
+
+ function AddLand({ lands, setLands }) {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
@@ -38,68 +39,49 @@ function AddLand({ lands, setLands }) {
   }
 
   return (
-    <div>
-      <h1 className="text-center text-success py-5">Add Land</h1>
+    <form onSubmit={handleSubmit}>
+  
+  <div className="form-outline mb-4">
+    <input type="text" id="form4Example1" value={name}
+             onSubmit={(e) => setName(e.target.value)} className="form-control" />
+    <label className="form-label" for="form4Example1">Name</label>
+  </div>
 
-      <form class="card-body container" onSubmit={handleSubmit}>
-        <div class="mb-3">
-          <label class="form-label">Enter name</label>
-          <input
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-          />
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Image url</label>
-          <input
-            value={image}
-            onChange={(e) => setImage(e.target.value)}
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-          />
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Enter Title</label>
-          <input
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-          />
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Enter size</label>
-          <input
-            value={size}
-            onChange={(e) => setSize(e.target.value)}
-            type="text"
-            class="form-control"
-            id="exampleFormControlInput1"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">
-            Enter price
-          </label>
-          <input
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-            type="number"
-            class="form-control"
-            id="exampleFormControlInput1"
-          />
-        </div>
-        <input type="submit" class="btn btn-success" value="Submit" />
-        <Link to="/">
-          <button className="btn btn-success bttn">Back</button>
-        </Link>
-      </form>
-    </div>
+  
+  <div className="form-outline mb-4">
+    <input type="email" id="form4Example2" value={image}
+            onSubmit={(e) => setImage(e.target.value)} className="form-control" />
+    <label className="form-label" for="form4Example2">Image</label>
+  </div>
+
+
+  <div className="form-outline mb-4">
+    <textarea className="form-control"  value={title}
+             onSubmit={(e) => setTitle(e.target.value)} id="form4Example3" rows="4"></textarea>
+    <label className="form-label" for="form4Example3">Title</label>
+  </div>
+  <div className="form-outline mb-4">
+    <input type="text" id="form4Example1" value={size}
+            onSubmit={(e) => setSize(e.target.value)} className="form-control" />
+    <label className="form-label" for="form4Example1">Size</label>
+  </div>
+  <div className="form-outline mb-4">
+    <input type="text" id="form4Example1" value={price}
+             onSubmit={(e) => setPrice(e.target.value)} className="form-control" />
+    <label className="form-label" for="form4Example1">Name</label>
+  </div>
+  
+  <div className="form-check d-flex justify-content-center mb-4">
+    <input className="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+    <label className="form-check-label" for="form4Example4">
+
+    </label>
+  </div>
+
+  <button type="submit" className="btn btn-primary btn-block mb-4">Send</button>
+</form>
+
+    
   );
 }
 

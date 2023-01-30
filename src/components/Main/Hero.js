@@ -6,6 +6,7 @@ import Property from './Property';
 import ContactForm from './Contact';
 
 
+
 const ImageSlider = ({slides, sortedLands}) => {
   //const [lands, setLands] = useState([])
   const [current, setCurrent] = useState(0);
