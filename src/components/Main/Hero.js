@@ -6,7 +6,7 @@ import Property from './Property';
 import ContactForm from './Contact';
 
 
-const ImageSlider = ({slides}) => {
+const ImageSlider = ({slides, sortedLands}) => {
   //const [lands, setLands] = useState([])
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -48,7 +48,7 @@ const ImageSlider = ({slides}) => {
       })}
     </div>
     <About />
-    <Property />
+    <Property sortedLands={sortedLands} />
     <ContactForm />
     </>
   );

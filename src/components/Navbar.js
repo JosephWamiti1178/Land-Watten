@@ -6,7 +6,7 @@ import { Link} from "react-router-dom";
 
 
 
-function NavBar({ onChangePage }) {
+function NavBar({ onChangePage, handleSearch}) {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
     
@@ -71,7 +71,7 @@ function NavBar({ onChangePage }) {
       </div>
       <form className="d-flex search" role="search">
               <input
-                // onChange={handleSearch}
+                onChange={handleSearch}
                 class="form-control me-1"
                 type="text"
                 name="price"

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom"
 
 function Property(){
     const [lands, setLands] = useState([])
@@ -33,14 +34,15 @@ function Property(){
                                             <h2>{land.name}</h2>
                                         </div>
                                         <div>
+                                            <p>{land.title}</p>
                                             <h4>{land.price}</h4>
                                             <p>{land.size}</p>
                                             
                                         </div>
-                                       
+                                       <Link to={`/properties/${land.id}`}>
                                         <button type="button" class="btn btn-success">More Details</button>
 
-
+                                        </Link>
                             
                                     </div>
                                     
