@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import About from './components/Main/About';
 import Property from './components/Main/Property';
 import Footer from './components/Footer'
-import {  Routes, Route } from 'react-router-dom';
+import {  Switch, Route } from 'react-router-dom';
 import React, {useState, useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SliderData } from './components/Main/SliderData';
@@ -37,8 +37,10 @@ function App() {
     
     />
    
-      <Routes>
-      <Route  path="/"  element={<ImageSlider slides={SliderData}    />}> </Route> 
+      <Switch>
+      <Route  path="/"> 
+      <ImageSlider slides={SliderData}    /> 
+      </Route> 
       <Route path="/add">
         <AddLand lands={lands} setLands={setLands} />
       </Route>
@@ -48,7 +50,7 @@ function App() {
         <Route path="/contact" element={  <ContactForm /> }>  
         </Route>
        
-      </Routes>
+      </Switch>
     <Footer /> 
     </div>
     
