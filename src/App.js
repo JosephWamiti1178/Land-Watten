@@ -1,17 +1,20 @@
-
 import './App.css';
 import Navbar from './components/Navbar';
-import About from './components/Main/About';
-import Property from './components/Main/Property';
 import Footer from './components/Footer'
-import {  Switch, Route } from 'react-router-dom';
+
+import About from './components/About';
+import Property from './components/Property';
+import ContactForm from './components/ContactForm';
+
+import {  Routes, Route } from 'react-router-dom';
 import React, {useState, useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { SliderData } from './components/Main/SliderData';
-import ImageSlider from './components/Main/Hero';
-import ContactForm from './components/Main/Contact';
-//import MainPage from './components/Main/MainPage';
-import AddLand from './components/Main/AddLand';
+import { SliderData } from './components/SliderData';
+import ImageSlider from './components/ImageSlider';
+
+//import MainPage from './components/MainPage';
+//import AddLand from './components/AddLand';
+import LandDetails from './components/LandDetails';
 
 
 function App() {
@@ -19,7 +22,7 @@ function App() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/lands?q=" + search)
+    fetch("http://localhost:8000/lands?q=" + search)
       .then((response) => response.json())
       .then((data) => setLands(data));
   }, [search]);
@@ -30,30 +33,19 @@ function App() {
   }
   return (
     <div className="app">
-    <Navbar 
-     handleSearch={handleSearch}
-     lands={lands}
-   
-    
-    />
-   
-      <Switch>
-      <Route  path="/"> 
-      <ImageSlider slides={SliderData}    /> 
-      </Route> 
-      <Route path="/add">
-        <AddLand lands={lands} setLands={setLands} />
-      </Route>
-       
-        <Route  path="/about"  element={<About />}> </Route> 
-        <Route path="/property" element={<Property />}></Route>
-        <Route path="/contact" element={  <ContactForm /> }>  
-        </Route>
-       
-      </Switch>
-    <Footer /> 
+      <div>
+    <Navbar handleSearch={handleSearch}lands={lands}/>
     </div>
-    
+      <Routes>
+        <Route path="/" element={<ImageSlider slides={SliderData}/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/property" element={<Property/>}/>
+        <Route path="/property/id" element={<LandDetails/>}/>
+        <Route path="/contact" element={  <ContactForm /> }/>
+      </Routes>
+    <Footer />
+    </div>
+
   );
 }
 

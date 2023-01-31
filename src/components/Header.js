@@ -1,6 +1,6 @@
 import { Switch, Route } from "react-router-dom";
 //import React, { useState } from "react";
-import NavBar from "../Navbar";
+import NavBar from "./Navbar";
 import About from './About'
 import Property from './Property'
 import Home from './Home'

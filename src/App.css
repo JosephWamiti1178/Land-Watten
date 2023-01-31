@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.container-fluid{
+  /* text-align: right; */
+  display: flex;
+  justify-content: space-between;
+  }
+  .navbar{
+      display: flex;
+  }
+  .logo >img {
+      height: 70px;
+      width: 150px;
+  }
+  a{
+  display: inline-block;
+  padding: 1em;
+  
+  }

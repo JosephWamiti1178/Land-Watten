@@ -5,7 +5,7 @@ function Property(){
     const [lands, setLands] = useState([])
 
     useEffect(()=> {
-        fetch("http://localhost:3000/lands")
+        fetch("http://localhost:8000/lands")
         .then((response)=> response.json())
         .then((land) => setLands(land))
         .catch((error) => {

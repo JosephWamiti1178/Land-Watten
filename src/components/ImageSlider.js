@@ -3,7 +3,7 @@ import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import About from './About'
 import Property from './Property';
-import ContactForm from './Contact';
+import ContactForm from './ContactForm';
 
 
 
