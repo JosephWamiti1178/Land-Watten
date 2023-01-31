@@ -7,7 +7,7 @@ import Property from './components/Property';
 import ContactForm from './components/ContactForm';
 
 import {  Routes, Route } from 'react-router-dom';
-import React, {useState, useEffect} from 'react'
+//import React, {useState, useEffect} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SliderData } from './components/SliderData';
 import ImageSlider from './components/ImageSlider';
@@ -18,23 +18,23 @@ import LandDetails from './components/LandDetails';
 
 
 function App() {
-  const [lands, setLands] = useState([]);
-  const [search, setSearch] = useState("");
+  // const [lands, setLands] = useState([]);
+  // const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    fetch("http://localhost:8000/lands?q=" + search)
-      .then((response) => response.json())
-      .then((data) => setLands(data));
-  }, [search]);
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/lands?q=" + search)
+  //     .then((response) => response.json())
+  //     .then((data) => setLands(data));
+  // }, [search]);
 
 
-  function handleSearch(e) {
-    setSearch(e.target.value);
-  }
+  // function handleSearch(e) {
+  //   setSearch(e.target.value);
+  // }
   return (
     <div className="app">
       <div>
-    <Navbar />
+    <Navbar  />
     </div>
       <Routes>
         <Route path="/" element={<ImageSlider slides={SliderData}/>}/>
