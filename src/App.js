@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="app">
       <div>
-    <Navbar handleSearch={handleSearch}lands={lands}/>
+    <Navbar />
     </div>
       <Routes>
         <Route path="/" element={<ImageSlider slides={SliderData}/>}/>

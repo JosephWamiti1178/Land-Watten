@@ -33,7 +33,7 @@ const ImageSlider = ({slides, sortedLands}) => {
 
   return (
     <>
-    <div className='slider container-fluid'>
+    <div className='slider'>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
       <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
       {SliderData.map((slide, index) => {
