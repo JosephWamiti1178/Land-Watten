@@ -40,7 +40,7 @@ function App() {
         <Route path="/" element={<ImageSlider slides={SliderData}/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/property" element={<Property/>}/>
-        <Route path="/property/id" element={<LandDetails/>}/>
+        <Route path="/property/:id" element={<LandDetails/>}/>
         <Route path="/contact" element={  <ContactForm /> }/>
       </Routes>
     <Footer />

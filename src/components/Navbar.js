@@ -9,9 +9,10 @@ function NavBar(){
           <img src={logo} alt="logo" />
         </div>
         <div className="links">
-          <NavLink to="/">Home</NavLink>
+          <NavLink  to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/property">Property</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/contact">Contact</NavLink>
         </div>
 

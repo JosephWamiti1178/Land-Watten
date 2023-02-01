@@ -48,8 +48,12 @@
       height: 70px;
       width: 150px;
   }
+  .links{
+    color: black;
+  }
   a{
   display: inline-block;
   padding: 1em;
+  color: #282c34;
   
   }

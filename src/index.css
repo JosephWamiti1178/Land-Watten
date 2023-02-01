@@ -104,8 +104,9 @@ p {
 }
 
 .image {
-  width: 1000px;
-  height: 600px;
+  object-fit:fill;
+  width: 1150px;
+  height: 590px;
   border-radius: 10px;
 }
 
@@ -199,6 +200,10 @@ p {
 /* .container{
   min-height:100vh;
 } */
+.property{ 
+  overflow: hidden;                                           
+
+}
 
 .property-wrapper{
   width: 100%;
@@ -223,8 +228,9 @@ p {
 .property-item{
   margin: 2rem 0;
   background-color:#d4d2d2;
+  overflow-x: scroll;
   border-radius: 1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 5px 20px -12px rgba(0, 0, 0, 0.79); 
 }
 
@@ -266,11 +272,18 @@ button{
   padding: 3rem;
   margin-top: .1rem;
 }
+#input{
+  padding-right: 20rem;
+
+}
 
 .contact{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+#contact-form{
+  padding: 100px;
 }
 .form{
   /* right: 0; */

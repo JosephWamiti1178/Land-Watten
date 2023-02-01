@@ -14,11 +14,11 @@ function Property(){
       }, []);
     return(
         
-            <div className="container-fluid">
-            <div className="property-wrapper">
-                <div className="heading">
-                <h2 className="title">Selling Lands</h2>
-                <p>Plots on Sale 50 x 100</p>
+            <div className="container-fluid property">
+               <div className="property-wrapper">
+                   <div className="heading">
+                         <h2 className="title">Selling Lands</h2>
+                        <p>Plots on Sale 50 x 100</p>
                 </div>
             <div id="property">
               

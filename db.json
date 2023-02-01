@@ -94,53 +94,11 @@
       "id": 1
     },
     {
-      "name": "",
-      "email": "",
-      "phone": 0,
-      "message": "",
+      "firstname": "Cyrus",
+      "email": "josephmugo8711@gmail.com",
+      "phone": "0795214400",
+      "message": "Enquire about a 50 by 100 plot",
       "id": 2
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": 0,
-      "message": "",
-      "id": 3
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": 0,
-      "message": "",
-      "id": 4
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": 0,
-      "message": "",
-      "id": 5
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": 0,
-      "message": "",
-      "id": 6
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": 0,
-      "message": "",
-      "id": 7
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": 0,
-      "message": "",
-      "id": 8
     }
   ]
 }
