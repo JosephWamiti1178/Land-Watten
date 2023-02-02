@@ -15,6 +15,7 @@ import ImageSlider from './components/ImageSlider';
 //import MainPage from './components/MainPage';
 //import AddLand from './components/AddLand';
 import LandDetails from './components/LandDetails';
+import AddLand from './components/AddLand';
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
     </div>
       <Routes>
         <Route path="/" element={<ImageSlider slides={SliderData}/>}/>
+        <Route path="/add" element={<AddLand />}/>
+
         <Route path="/about" element={<About/>}/>
         <Route path="/property" element={<Property/>}/>
         <Route path="/property/:id" element={<LandDetails/>}/>

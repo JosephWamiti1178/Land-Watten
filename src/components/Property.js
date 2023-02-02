@@ -5,7 +5,7 @@ function Property(){
     const [lands, setLands] = useState([])
 
     useEffect(()=> {
-        fetch("http://localhost:8000/lands")
+        fetch("http://localhost:8001/lands")
         .then((response)=> response.json())
         .then((land) => setLands(land))
         .catch((error) => {
@@ -39,12 +39,11 @@ function Property(){
                                             <p>{land.size}</p>
                                             
                                         </div>
-                                       <Link to={`/properties/${land.id}`}>
-                                        <button type="button" class="btn btn-success">More Details</button>
-
+                                        <Link to={`/property/${land.id}`}>
+                                          <button type="button" class="btn btn-success">More Details</button>
                                         </Link>
                             
-                                    </div>
+                                         </div>
                                     
                      
                                     

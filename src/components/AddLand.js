@@ -21,7 +21,7 @@ import React, {useState}from "react";
     setSize("");
     setPrice(0);
 
-    fetch(" http://localhost:3000/lands", {
+    fetch(" http://localhost:8001/lands", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

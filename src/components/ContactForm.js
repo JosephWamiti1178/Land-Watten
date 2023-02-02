@@ -31,7 +31,7 @@ function ContactForm({submittedData,setSubmittedData}) {
       message:message,
 
     }
-    fetch('http://localhost:8000/clients', {
+    fetch('http://localhost:8001/clients', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

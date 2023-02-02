@@ -6,15 +6,16 @@ function LandDetails() {
   const [lands, setLands] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/lands/${id}`)
+    fetch(`http://localhost:8001/lands/${id}`)
       .then((response) => response.json())
       .then((data) => setLands(data));
   }, [id]);
 
   return (
+    
     <div>
       <h1 className="text-center">Land Details</h1>
-      Land {id}
+            Land {id}
       <div className="col-2 mb-4 center">
         <div className="row no-gutters" style={{ width: "18rem;" }}>
           <div className="row ">
@@ -24,21 +25,17 @@ function LandDetails() {
               </div>
 
               <div className="card-body">
-              <h5 className="card-text-sm">
-                  Title:
+              <h5 className="card-text-sm">             
                   <span className="text-success"> {lands.title}</span>
                 </h5>
                 <h5 className="card-text-sm">
-                  Size:
                   <span className="text-success"> {lands.size}</span>
                 </h5>
 
                 <h5 className="card-text-sm">
-                  Price KSH:
                   <span className="text-success"> {lands.price}</span>
                 </h5>
               </div>
-
               <Link to="/">
                 <button className="btn btn-success">Back</button>
               </Link>
@@ -46,7 +43,8 @@ function LandDetails() {
           </div>
         </div>
       </div>
-    </div>
+    
+      </div>
   );
 }
 
