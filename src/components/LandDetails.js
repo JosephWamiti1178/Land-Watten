@@ -14,37 +14,33 @@ function LandDetails() {
   return (
     
     <div>
-      <h1 className="text-center">Land Details</h1>
-            Land {id}
-      <div className="col-2 mb-4 center">
-        <div className="row no-gutters" style={{ width: "18rem;" }}>
-          <div className="row ">
-            <div className="card p-0 m-1 border border-success shadow p-3 mb-5 bg-body rounded">
-              <div className="col md-3">
-                <img src={lands.image} className="card-img-top" alt="..." />
-              </div>
-
-              <div className="card-body">
-              <h5 className="card-text-sm">             
-                  <span className="text-success"> {lands.title}</span>
-                </h5>
-                <h5 className="card-text-sm">
-                  <span className="text-success"> {lands.size}</span>
-                </h5>
-
-                <h5 className="card-text-sm">
-                  <span className="text-success"> {lands.price}</span>
-                </h5>
-              </div>
-              <Link to="/">
-                <button className="btn btn-success">Back</button>
-              </Link>
-            </div>
-          </div>
+      <div className="container">
+        <h1 className="text-center">Land Details</h1>
+        <div className="property-result">
+                      <div id="property">
+                      <div className="property-item">
+                        <div className="property-img">
+                          <img src={lands.image} alt="land" />
+                        </div>
+                        <div className="property-name">
+                                <h2>{lands.name}</h2>
+                               <div className="container">
+                                            <p>{lands.title}</p>
+                                            <h4>{lands.price}</h4>
+                                            <p>{lands.size}</p>
+                               </div>              
+                
+                        </div>
+                        <Link to="/">
+                          <button className="btn btn-success">Back</button>
+                       </Link>
+                        </div>
+                       
+                      </div>
+                      </div>
         </div>
       </div>
-    
-      </div>
+      
   );
 }
 

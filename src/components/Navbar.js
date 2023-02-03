@@ -12,8 +12,15 @@ function NavBar(){
           <NavLink  to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/property">Property</NavLink>
+          <NavLink to="/chat-box">Chat</NavLink>
           <NavLink to="/blog">Blog</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/contact">Contact</NavLink>>
+        </div>
+
+        <div>
+          <button>
+            Add
+          </button>
         </div>
 
       </div>

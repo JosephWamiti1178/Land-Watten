@@ -1,6 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'
+import ChatBox from './components/ChatBox';
 
 import About from './components/About';
 import Property from './components/Property';
@@ -43,6 +44,7 @@ function App() {
 
         <Route path="/about" element={<About/>}/>
         <Route path="/property" element={<Property/>}/>
+        <Route path="/chat-box" element={<ChatBox/>}/>
         <Route path="/property/:id" element={<LandDetails/>}/>
         <Route path="/contact" element={  <ContactForm /> }/>
       </Routes>
