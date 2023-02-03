@@ -1,23 +1,30 @@
 # Watten Developers
 *****
-### Author : Name Date
+### Mugo Joseph Wamiti 
 ****
 ## Project Description
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Project Description: Real Estate Land Management Web Application
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The goal of this project is to create a web application to manage real estate land. The application will include various functions and features that make it easier to manage land, such as viewing land records, adding and editing land information, tracking land transactions, and generating reports.
+
+
+The application will be accessible to users through a web browser and will be secure, with authentication and authorization features that prevent unauthorized access. It will also be built with a mobile-first design, ensuring that it is responsive and optimized for use on mobile devices.
+
+
+The application should also be easy to use, with a user-friendly interface that makes it simple to add and manage land records, track land transactions, and generate reports. A powerful search function should also be included, allowing users to quickly search for land records and generate reports.
+
+
+Finally, the application should be customizable and extensible, allowing users to add additional features and integrate with existing systems if needed. This will ensure that the application can be easily adapted to suit the requirements of different users.
 ******
 
 ## SCREENSHOTS
-- link 1
-- link 2
+
 
 
 ********
 ## SetUp Instruction
 ### Requirements
-* [Lang](lang Url)
-* [Framework](Framework URL)
+* [Framework](https://reactjs.org/)
 * Text editor eg [Visual Studio Code](https://code.visualstudio.com/download)
 * [Testing Platform](Platform URL)
 
@@ -34,11 +41,15 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 * Open the folder location on terminal and use the following command to run app:
 
 ## How To Run It
->  $ pip install -r requirements.txt
-To install all requirements
+>  $ npm install
+To install all dependencies
 
-> $ python3 manage.py runserver
+> $ json-server --watch --port 8001
 Then run server with the above command
+
+> $ npm start
+To begin the development
+
 *****
 ## Live Link
 Or you can access the web application directly via this [LINK.](link.com/)
@@ -52,13 +63,13 @@ Or you can access the web application directly via this [LINK.](link.com/)
 ## Technologies Used
 1. HTML
 2. MdBootstrap
-3. HTML
+3. React
 4. CSS
 5. JavaScript
 *****
 ## Contact Information
-* Email : example@gmail.com
+* Email : josephmugo8711@gmail.com
 *****
 ## [License](LICENSE)
 MIT License
-Copyright (c) YEAR Author
+Copyright (c) 2023 Mugo Joseph Wamiti
